@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify --debug index.jsx --outfile bundle.js -t [ babelify --presets [ es2015 react ] ]"
+    "build": "browserify --debug index.jsx --outfile bundle.js -t [ babelify --presets [ es2015 react ] ]",
+    "test": "mocha --compilers js:babel-register"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +20,9 @@
     "react-dom": "^0.14.3"
   },
   "devDependencies": {
+    "babelify": "^7.2.0",
     "browserify": "^12.0.1",
-    "babelify": "^7.2.0"
+    "enzyme": "^1.1.0",
+    "react-addons-test-utils": "^0.14.3"
   }
 }

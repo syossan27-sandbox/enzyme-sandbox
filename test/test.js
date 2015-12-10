@@ -1,58 +1,3 @@
-# enzyme-sandbox
-
-## Setting React
-
-Note: Based [js-practice-swing-example](https://github.com/syossan27-sandbox/js-practice-swing-example)
-
-`$ npm install --save-dev babel-preset-es2015 babel-preset-react`
-
-edit package.json.
-
-```
-"scripts": {
-  "build": "browserify --debug index.jsx --outfile bundle.js -t [ babelify --presets [ es2015 react ] ]"
-}
-```
-
-## Setting Test
-
-### install mocha & setting babel
-
-`$ npm install -g mocha`
-
-`$ npm install --save-dev babel-register`
-
-add this code to package.json.
-
-```
-"scripts": {
-  "test": "mocha --compilers js:babel-register"
-}
-```
-
-make .babelrc.
-
-```
-{
-  "presets": ["es2015", "react"]
-}
-```
-
-### install enzyme
-
-`$ npm install --save-dev enzyme`
-
-## Make Test File
-
-```
-$ mkdir test
-$ cd test
-$ touch test.js
-```
-
-example test.js
-
-```
 import { shallow } from 'enzyme';
 
 describe('<MyComponent />', () => {
@@ -86,4 +31,3 @@ describe('<MyComponent />', () => {
   });
 
 });
-```
