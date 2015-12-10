@@ -1,15 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Foo from './Foo.jsx'
 
-let MyConponents = React.createClass({
+let MyComponent = React.createClass({
   render: () => {
     return (
-      <h1>Hello, World!</h1>
+      <div>
+        <h1>Hello, World!</h1>
+        <Foo />
+        <Foo />
+        <Foo />
+      </div>
     )
   }
 })
 
-ReactDOM.render(
-  <MyConponents />,
-  document.getElementById('contents')
-)
+export default MyComponent;

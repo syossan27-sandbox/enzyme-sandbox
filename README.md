@@ -20,7 +20,7 @@ edit package.json.
 
 `$ npm install -g mocha`
 
-`$ npm install --save-dev babel-register`
+`$ npm install --save-dev babel-register chai`
 
 add this code to package.json.
 

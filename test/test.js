@@ -1,4 +1,9 @@
-import { shallow } from 'enzyme';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { shallow, mount, render } from 'enzyme';
+import { assert, expect } from 'chai';
+import MyComponent from '../index.jsx';
+import Foo from '../Foo.jsx';
 
 describe('<MyComponent />', () => {
 
