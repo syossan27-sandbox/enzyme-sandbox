@@ -87,3 +87,6 @@ describe('<MyComponent />', () => {
 
 });
 ```
+
+## Create Qiita article!
+[ReactのテストをEnzymeで書いてみよう](http://qiita.com/syossan27/items/4a66b4fe5d6c19a4df84)
